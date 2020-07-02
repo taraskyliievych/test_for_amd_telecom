@@ -4,7 +4,7 @@ header('Content-type: application/json');
 require 'Weather.php';
 require 'Routee.php';
 
-$temp = Weather::getTemperature('Thessaloniki');
+$temp = Weather::getTemperature('Thessaloniki', 'b385aa7d4e568152288b3c9f5c2458a5');
 
 if (empty($temp)) {
     return;
