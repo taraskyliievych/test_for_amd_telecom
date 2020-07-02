@@ -17,6 +17,8 @@ if ($temp > 20) {
 }
 
 $phoneNumber = '+30  6948872100';
+
+//This script is executed every 10 minutes if we use cron job
 $routeeResponse = Routee::sendSMS('57cd83a3e4b0464b9119ba46', 'OXr7WYcP9A', $phoneNumber, $messageText);
 
 echo json_encode(['result_text' => $messageText, 'routee_response' => $routeeResponse]);
